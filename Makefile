@@ -1,5 +1,7 @@
 init:
 	yarn
+	mkdir www
+	mv manifest.json www/
 	ionic platform android
 
 build:
