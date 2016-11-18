@@ -1,12 +1,14 @@
 init:
 	yarn
 	mkdir www
-	mv manifest.json www/
-	ionic platform android
+	cp manifest.json www/
+	ionic platform add android
 
 build:
 	rm -rf www
-# TODO building process
+	mkdir www
+	cp manifest.json www/
+# TODO building process but now just copy things
 	cp -r src www
 	ionic build android
 	rm -rf _build
