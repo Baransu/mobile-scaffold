@@ -4,7 +4,7 @@
 It will clone repo and run `ionic` as well as `yarn` setup.
 ```
 git clone https://gitlab.com/neontree/mobile-scaffold.git
-make init
+cd mobilescaffold && make init
 ```
 
 ### Development
