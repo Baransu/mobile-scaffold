@@ -4,12 +4,16 @@ init:
 	cp manifest.json www/
 	ionic platform add android
 
+build-front:
+	webpack
+	cp src/index.html www/
+# TODO node-sass build
+
 build:
 	rm -rf www
 	mkdir www
 	cp manifest.json www/
-# TODO building process but now just copy things
-	cp -r src www
+	make build-front
 	ionic build android
 	rm -rf _build
 	mkdir _build
