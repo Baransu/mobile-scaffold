@@ -7,7 +7,7 @@ init:
 build-front:
 	webpack
 	cp src/index.html www/
-# TODO node-sass build
+	gulp
 
 build:
 	rm -rf www
